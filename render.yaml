@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: mcc-task-manager-api
+    runtime: node
+    buildCommand: "npm install && npm run build"
+    startCommand: "node dist/server.js"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: DB_HOST
+        fromDatabase:
+          name: mcc-postgres
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: mcc-postgres
+          property: port
+      - key: DB_NAME
+        fromDatabase:
+          name: mcc-postgres
+          property: database
+      - key: DB_USER
+        fromDatabase:
+          name: mcc-postgres
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: mcc-postgres
+          property: password
+      - key: JWT_SECRET
+        value: your_jwt_secret_key_here_change_in_production
+
+databases:
+  - name: mcc-postgres
+    databaseName: task_manager
+    user: postgres
