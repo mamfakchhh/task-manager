@@ -1,0 +1,28 @@
+{
+  "recommendations": [
+    "ms-vscode.csharp",
+    "ms-dotnettools.csharp",
+    "ms-dotnettools.vscode-dotnet-runtime",
+    "ms-vscode.makefile-tools",
+    "ms-vscode.powershell",
+    "formulahendry.code-runner",
+    "ms-vscode-remote.remote-containers",
+    "ms-vscode-remote.remote-ssh",
+    "ms-vscode-remote.remote-wsl",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "dsznajder.es7-react-js-snippets",
+    "msjsdiag.debugger-for-chrome",
+    "ms-vscode.vscode-typescript-next",
+    "ms-vscode.azure-account",
+    "ms-dotnettools.dotnet-interactive-vscode",
+    "ms-dotnettools.azure-dev",
+    "GitHub.Copilot",
+    "eamodio.gitlens",
+    "ms-vscode.hexeditor",
+    "ms-vscode.remote-server",
+    "EditorConfig.EditorConfig",
+    "ms-vscode.makefile-tools"
+  ]
+}
